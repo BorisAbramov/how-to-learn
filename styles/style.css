@@ -8,11 +8,11 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-/*
+
 div, section{
   border: 1px solid red;
 }
-*/
+
 .header {
   height: 100vh;
   min-height: 600px;
@@ -33,7 +33,7 @@ div, section{
   background-color: #2f80ed;
   z-index: 1;
 }
-.header__logo{
+.logo_place_header{
   position: absolute;
   top: 30px;
   left: 64px;
@@ -61,7 +61,8 @@ div, section{
 }
 
 .header__subtitle{
-  margin: 0px auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
   position: absolute;
   left: 64px;
   bottom: 30px;
@@ -91,7 +92,7 @@ div, section{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 100px;
+  padding: 100px 0px;
   
 }
 .two-columns{
@@ -101,7 +102,8 @@ div, section{
 
 }
 .two-columns__brief{
-  margin: 0px auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
   width: 175px;
   line-height: 1.2;
   font-size: 18px;
@@ -115,11 +117,16 @@ div, section{
 
 
 .two-columns__paragraph{
+  margin-top: 0px;
+  margin-bottom: 30px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
-.two-columns_span-accent{
+.two-columns__paragraph:last-child{
+  margin-bottom: 0px;
+}
+.two-columns__span-accent{
   margin: 30px auto;
   font-weight: bold;
 }
@@ -169,6 +176,7 @@ div, section{
 
 .table__heading{
   margin-top: 0px;
+  margin-bottom: 0px;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
@@ -188,20 +196,25 @@ div, section{
   background-color: #f2f2f2;
   /*align-self: center;*/
   justify-content: center;
+  padding-top: 100px;
 }
 .feynman__title{
+  margin: 0px auto;
+  width: 648px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
   position: relative;
+  text-align: center;
   z-index: 7;
-  padding: 100px auto 70px auto;
 }
 .feynman__subtitle{
+  margin: 70px auto 0px auto;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   position: relative;
+  text-align: center;
   z-index: 6;
 }
 .feynman__link{
@@ -247,6 +260,7 @@ div, section{
 }
 .kaufman__triangle{
   background-image: url('../images/kaufman-triangle.svg');
+  background-size: contain;
   position: absolute;
   width: 877px;
   height: 877px;
