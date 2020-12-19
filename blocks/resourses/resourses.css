@@ -1,0 +1,8 @@
+.resourses{
+    padding-top: 100px;
+    padding-bottom: 217px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: baseline;
+  }

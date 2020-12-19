@@ -1,0 +1,8 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-wrap: wrap;
+    
+   
+  }
