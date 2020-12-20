@@ -8,4 +8,6 @@
     font-size: 102px;
     font-weight: bold;
     z-index: 3;
+    margin: 0;
+    padding: 0;
   }
